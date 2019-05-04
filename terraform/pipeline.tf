@@ -77,9 +77,10 @@ resource "aws_codepipeline" "hacktiv8-codepipeline" {
       output_artifacts = ["source_output"]
 
       configuration = {
-        Owner  = "romiafrizal"
-        Repo   = "hactktiv8-wp-test"
-        Branch = "master"
+        OAuthToken  = "${var.GITHUB_TOKEN}"
+        Owner       = "romiafrizal"
+        Repo        = "hactktiv8-wp-test"
+        Branch      = "master"
       }
     }
   }

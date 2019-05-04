@@ -17,3 +17,4 @@ terrafom/keys/*.pub
 terrafom/keys/*.pem
 *.pub
 *.pem
+terrafom/variablesecret.tf
