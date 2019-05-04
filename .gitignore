@@ -13,8 +13,8 @@
 
 
 #KEYFILES
-terrafom/keys/*.pub
-terrafom/keys/*.pem
+terraform/keys/*.pub
+terraform/keys/*.pem
 *.pub
 *.pem
-terrafom/variablesecret.tf
+terraform/variablesecret.tf
