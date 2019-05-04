@@ -17,4 +17,4 @@ terraform/keys/*.pub
 terraform/keys/*.pem
 *.pub
 *.pem
-terraform/variablesecret.tf
+terraform/variablesecret.*
