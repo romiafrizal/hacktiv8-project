@@ -18,3 +18,4 @@ terraform/keys/*.pem
 *.pub
 *.pem
 terraform/variablesecret.*
+**/*/variablesecret.*
