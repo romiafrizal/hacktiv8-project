@@ -11,3 +11,5 @@ sudo apt-get install -y apache2
 sudo service apache2 start
 sudo apt-get install php php-{bcmath,bz2,intl,gd,mbstring,mysql,zip,fpm} -y
 sudo apt-get install mysql-client -y
+
+a2enmod proxy_fcgi setenvif

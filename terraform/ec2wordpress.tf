@@ -21,6 +21,17 @@ resource "aws_instance" "wordpress" {
     ]
   }
 
+provisioner "file" {
+    source = "etc/000-default.conf"
+    destination = "/tmp/000-default.conf"
+  }
+provisioner "remote-exec" {
+    inline = [
+      "sudo cp /tmp/000-default.conf /etc/apache2/sites-enabled/000-default.conf",
+      "sudo chown www-data:www-data /etc/apache2/sites-enabled/000-default.conf"
+    ]
+  }
+
   connection {
     user = "${var.instanceUsername}"
     private_key = "${file("${var.PATH_TO_PRIVATE_KEY}")}"
